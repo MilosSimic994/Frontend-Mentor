@@ -149,10 +149,10 @@ progress::-webkit-progress-value {
         width: 17rem;
     }
     .perc {
-        width: 15rem;
+        width: 17rem;
     }
     progress {
-        width: 15rem;
+        width: 17rem;
     }
     .left {
         clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 100%); 
