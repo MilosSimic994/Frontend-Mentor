@@ -33,7 +33,6 @@ body {
     height: 100%;
     color: aliceblue;
     display: flex;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 3rem;
@@ -104,6 +103,7 @@ progress::-webkit-progress-value {
     font-size: 14px;
     font-weight: 400;
     margin-top: 0.5rem ;
+    color: white;
 }
 
 .left {
@@ -124,4 +124,40 @@ progress::-webkit-progress-value {
     font-size: 2rem;
     font-weight: 700;
     color: hsl(229, 57%, 11%);
+}
+@media(max-width: 375px) {
+    body {
+        background: url('./images/bg-mobile.svg');
+    }
+    .items {
+        flex-direction: column;
+        padding: 0;
+    }
+    .item-icons {
+        width: 21rem;
+        margin: 1rem;
+    }
+    .item-progress {
+        width: 21rem;
+        height: 13rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .usage {
+        width: 17rem;
+    }
+    .perc {
+        width: 15rem;
+    }
+    progress {
+        width: 15rem;
+    }
+    .left {
+        clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 100%); 
+        border-radius: 20px;
+        top: 170px;
+        height: 5rem;
+    }
 }
