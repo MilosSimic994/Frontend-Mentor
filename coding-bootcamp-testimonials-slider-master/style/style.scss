@@ -70,3 +70,10 @@
         }
     }
 }
+
+@media(max-width: 375px) {
+    .card {
+        flex-direction: column;
+        background: greenyellow;
+    }
+}
